@@ -1,0 +1,30 @@
+URxvt.depth:                    32
+URxvt.iconFile:                 /usr/share/icons/Moka/32x32/apps/terminal.png
+URxvt.colorBD:                  #87af5f
+URxvt.colorUL:                  #ffffff
+URxvt.geometry:                 90x30
+URxvt.cursorUnderline:          true
+URxvt.cursorBlink:              true
+URxvt.pointerBlank:             true
+URxvt.letterSpace:              -2
+URxvt.font:			xft:Dejavu Sans Mono for Powerline:size=13
+!URxvt.font:			xft:Ubuntu Mono derivative Powerline:size=15
+URxvt.saveLines:                0
+URxvt.utmpInhibit:              true
+URxvt.perl-ext-common:          default,matcher
+URxvt.url-launcher:             /usr/bin/firefox
+URxvt.matcher.button:           3
+URxvt.scrollBar:                false
+URxvt.transparent:		true
+URxvt.shading:       		30
+*.foreground:                   #bfbfbf
+*.background:                   [75]#000000
+*.cursorColor:                  #00ff00
+
+rofi.color-enabled: true 
+rofi.color-window: #2f343f, #2f343f, #2f343f 
+rofi.color-normal: #2f343f, #f3f4f5, argb:2000000, #2f343f, #9575cd 
+rofi.color-active: #2f343f, #268bd2, #eee8d5, #268bd2, #fdf6e3 
+rofi.color-urgent: #fdf6e3, #dc322f, #eee8d5, #dc322f, #fdf6e3 
+xpdf*fontList: Dejavu Sans Mono for Powerline 13
+xpdf*Foreground: #000000
