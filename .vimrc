@@ -9,7 +9,8 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -28,6 +29,25 @@ filetype plugin indent on    " required
 syntax on
 set number
 set relativenumber
+set autoindent 
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+set ignorecase
+set smartcase
+set wildmenu 
+set incsearch
+set hlsearch
 
+" turn off search highlight
+nnoremap <space> :nohlsearch<CR>
+" if one line stretches over 2 visual lines
+" this lets you move over these visual lines
+nnoremap j gj
+nnoremap k gk
 
-
+set backup
+set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set backupskip=/tmp/*,/private/tmp/*
+set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
+set writebackup

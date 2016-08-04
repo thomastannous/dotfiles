@@ -172,7 +172,7 @@ bindsym $mod+r mode "resize"
 
 # Widow Colours
 #                        # border  background text    indicator
-  client.focused          #326335 #4F4F4F    $base07 $base01
+  client.focused          #32aa35 #4F4F4F    $base07 $base01
   client.focused_inactive $base02 $base02    $base03 $base02
   client.unfocused        $base02 $base02    $base03 $base02
   client.urgent           $base02 $base08    $base00 $base02
@@ -213,7 +213,7 @@ exec_always feh --bg-scale /home/tannous/pictures/Backgrounds-simple-wallpapers-
 
 
 #exec --no-startup-id nm-applet
-for_window [class="^.*"] border pixel 1 
+for_window [class="^.*"] border pixel 2 
 gaps inner 20 
 smart_gaps on 
 exec --no-startup-id compton -b
