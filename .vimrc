@@ -9,12 +9,10 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
-filetype plugin indent on    " required
+filetype plugin on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
 "
@@ -46,8 +44,22 @@ nnoremap <space> :nohlsearch<CR>
 nnoremap j gj
 nnoremap k gk
 
+"for latex-suite fix grep
+set grepprg=grep\ -nH\ $*
+
 set backup
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set backupskip=/tmp/*,/private/tmp/*
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set writebackup
+
+
+" disable auto comment
+au FileType * set fo-=c fo-=r fo-=o
+
+" Latex specific options
+"set leader to , for less finger stretching
+let mapleader = "," 
+let g:Tex_DefaultTargetFormat = 'pdf'
+let g:Tex_MultipleCompileFormats='pdf, aux'
+nmap <Leader>, :call SaveAndCompile()<CR>

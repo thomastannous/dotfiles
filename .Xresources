@@ -9,14 +9,14 @@ URxvt.pointerBlank:             true
 URxvt.letterSpace:              -2
 URxvt.font:			xft:Dejavu Sans Mono for Powerline:size=13
 !URxvt.font:			xft:Ubuntu Mono derivative Powerline:size=15
-URxvt.saveLines:                0
+URxvt.saveLines:                400
 URxvt.utmpInhibit:              true
 URxvt.perl-ext-common:          default,matcher
 URxvt.url-launcher:             /usr/bin/firefox
 URxvt.matcher.button:           3
 URxvt.scrollBar:                false
 URxvt.transparent:		true
-URxvt.shading:       		30
+URxvt.shading:       		25
 *.foreground:                   #bfbfbf
 *.background:                   [75]#000000
 *.cursorColor:                  #00ff00

@@ -172,7 +172,7 @@ bindsym $mod+r mode "resize"
 
 # Widow Colours
 #                        # border  background text    indicator
-  client.focused          #32aa35 #4F4F4F    $base07 $base01
+  client.focused          #4F4F4F #4F4F4F    $base07 #4F4F4F
   client.focused_inactive $base02 $base02    $base03 $base02
   client.unfocused        $base02 $base02    $base03 $base02
   client.urgent           $base02 $base08    $base00 $base02
