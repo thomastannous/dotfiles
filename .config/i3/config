@@ -33,7 +33,7 @@ set $baseTT #4F5980
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-#font pango:DejaVu Sans Mono 8
+#font pango:DejaVu Sans Mono 12
 
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
@@ -46,7 +46,7 @@ set $baseTT #4F5980
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvtc
+bindsym $mod+Return exec termite 
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -110,11 +110,12 @@ bindsym $mod+a focus parent
 
 set $workspace1 "1 "
 set $workspace2 "2 " 
+set $workspace4 "4 "
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
 bindsym $mod+2 workspace $workspace2
 bindsym $mod+3 workspace 3
-bindsym $mod+4 workspace 4
+bindsym $mod+4 workspace $workspace4
 bindsym $mod+5 workspace 5
 bindsym $mod+6 workspace 6
 bindsym $mod+7 workspace 7
@@ -126,7 +127,7 @@ bindsym $mod+0 workspace 10
 bindsym $mod+Shift+1 move container to workspace $workspace1
 bindsym $mod+Shift+2 move container to workspace $workspace2
 bindsym $mod+Shift+3 move container to workspace 3
-bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+4 move container to workspace $workspace4
 bindsym $mod+Shift+5 move container to workspace 5
 bindsym $mod+Shift+6 move container to workspace 6
 bindsym $mod+Shift+7 move container to workspace 7
@@ -172,7 +173,7 @@ bindsym $mod+r mode "resize"
 
 # Widow Colours
 #                        # border  background text    indicator
-  client.focused          #4F4F4F #4F4F4F    $base07 #4F4F4F
+  client.focused          #4F4F4F #C77B02    $base07 #C77B02
   client.focused_inactive $base02 $base02    $base03 $base02
   client.unfocused        $base02 $base02    $base03 $base02
   client.urgent           $base02 $base08    $base00 $base02
@@ -213,8 +214,10 @@ exec_always feh --bg-scale /home/tannous/pictures/Backgrounds-simple-wallpapers-
 
 
 #exec --no-startup-id nm-applet
-for_window [class="^.*"] border pixel 2 
+for_window [class="^.*"] border pixel 2
 gaps inner 20 
+smart_borders on
 smart_gaps on 
 exec --no-startup-id compton -b
+exec parcellite
 exec firefox

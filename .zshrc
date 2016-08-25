@@ -51,8 +51,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
-plugins=(git ssh-agent)
+plugins=(git ssh-agent mvn)
 # User configuration
 
 # export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
@@ -81,3 +80,5 @@ set -o vi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 cd /home/tannous
+alias swp2='mvn clean package -DskipTests=true embedded-glassfish:run'
+
