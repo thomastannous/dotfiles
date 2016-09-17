@@ -219,5 +219,5 @@ gaps inner 20
 smart_borders on
 smart_gaps on 
 exec --no-startup-id compton -b
-exec parcellite
+exec parcellite -n
 exec firefox

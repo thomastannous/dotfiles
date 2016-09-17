@@ -18,7 +18,6 @@ URxvt.scrollBar:                false
 URxvt.transparent:		true
 URxvt.shading:       		25
 *.foreground:                   #bfbfbf
-*.background:                   [75]#000000
 *.cursorColor:                  #00ff00
 
 rofi.color-enabled: true 

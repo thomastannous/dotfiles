@@ -1,3 +1,35 @@
+"NeoBundle Scripts-----------------------------
+if &compatible
+  set nocompatible               " Be iMproved
+endif
+
+" Required:
+set runtimepath+=/home/tannous/.vim/bundle/neobundle.vim/
+
+" Required:
+call neobundle#begin(expand('/home/tannous/.vim/bundle'))
+
+" Let NeoBundle manage NeoBundle
+" Required:
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+" Add or remove your Bundles here:
+NeoBundle 'dhruvasagar/vim-table-mode'
+
+" You can specify revision/branch/tag.
+ NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
+
+" Required:
+call neobundle#end()
+
+" Required:
+filetype plugin indent on
+
+" If there are uninstalled bundles found on startup,
+" this will conveniently prompt you to install them.
+NeoBundleCheck
+"End NeoBundle Scripts-------------------------
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -42,9 +74,9 @@ nnoremap <space> :nohlsearch<CR>
 nnoremap j gj
 nnoremap k gk
 
+
 "for latex-suite fix grep
 set grepprg=grep\ -nH\ $*
-
 set backup
 set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set backupskip=/tmp/*,/private/tmp/*
@@ -66,3 +98,20 @@ nmap <Leader>, :call SaveAndCompile()<CR>
 " color theme
 color badwolf 
 highlight Normal ctermbg=none
+
+
+" tableModetoggle
+inoreabbrev <expr> <bar><bar>
+            \ s:isAtStartOfLine('\|\|') ?
+            \ '<c-o>:TableModeEnable<cr><bar><space><bar><left><left>' : '<bar><bar>'
+inoreabbrev <expr> __
+            \ s:isAtStartOfLine('__') ?
+            \ '<c-o>:silent! TableModeDisable<cr>' : '__'
+
+fun! s:isAtStartOfLine(mapping)
+    let text_before_cursor = getline('.')[0 : col('.')-1]
+    let mapping_pattern = '\V' . escape(a:mapping, '\')
+    let comment_pattern = '\V' . escape(substitute(&l:commentstring, '%s.*$', '', ''), '\')
+    return (text_before_cursor =~? '^' . ('\v(' . comment_pattern . '\v)?') . '\s*\v' . mapping_pattern . '\v$')
+endf
+
