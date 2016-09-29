@@ -84,3 +84,5 @@ alias swp2='mvn clean package -DskipTests=true embedded-glassfish:run'
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_COMMAND="find -L"
+export FZF_CTRL_T_COMMAND="find -L"
