@@ -210,14 +210,14 @@ bar {
 #exec xmodmap -e 'keysym u = u U udiaeresis Udiaeresis'
 #exec xmodmap -e 'keysym s = s S ssharp'
 
-exec_always feh --bg-scale /home/tannous/pictures/Backgrounds-simple-wallpapers-HD.jpg
-
+exec_always feh --bg-scale /home/tannous/pictures/colorfulgradient.jpg
 
 #exec --no-startup-id nm-applet
 for_window [class="^.*"] border pixel 2
-gaps inner 20 
+gaps inner 12
 smart_borders on
 smart_gaps on 
 exec --no-startup-id compton -b
 exec parcellite -n
 exec firefox
+exec --no-startup-id owncloud

@@ -82,3 +82,5 @@ set -o vi
 cd /home/tannous
 alias swp2='mvn clean package -DskipTests=true embedded-glassfish:run'
 
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

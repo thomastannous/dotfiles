@@ -1,11 +1,10 @@
 "NeoBundle Scripts-----------------------------
-if &compatible
-  set nocompatible               " Be iMproved
+if &compatible 
+    set nocompatible               " Be iMproved
 endif
 
 " Required:
-set runtimepath+=/home/tannous/.vim/bundle/neobundle.vim/
-
+set runtimepath+=/home/tannous/.vim/bundle/neobundle.vim/ 
 " Required:
 call neobundle#begin(expand('/home/tannous/.vim/bundle'))
 
@@ -40,7 +39,7 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
-
+Plugin 'mileszs/ack.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin on    " required
@@ -93,11 +92,20 @@ let mapleader = ","
 let g:Tex_DefaultTargetFormat = 'pdf'
 let g:Tex_MultipleCompileFormats='pdf, aux'
 nmap <Leader>, :call SaveAndCompile()<CR>
+nmap <Leader>/ :Ack! 
+nmap <C-t> :FZF<CR>
 
+"for fzf.vim plugin
+set rtp+=~/.fzf
 
 " color theme
 color badwolf 
-highlight Normal ctermbg=none
+highlight Normal ctermbg=none ctermfg=none
+highlight NonText ctermbg=none
+highlight LineNr ctermbg=none
+
+
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " Linux/MacOSX
 
 
 " tableModetoggle

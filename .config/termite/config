@@ -1,11 +1,11 @@
 [options]
-font = Roboto Mono Medium for Powerline Medium 13
-font = Liberation Mono for Powerline Regular 13
-font = Ubuntu Mono derivative Powerline Regular 13
-font = Source Code Pro for Powerline Medium 13 
+font = Roboto Mono Medium for Powerline Medium 12
+font = Liberation Mono for Powerline Regular 12
+font = Ubuntu Mono derivative Powerline Regular 12
+font = Source Code Pro for Powerline Medium 12 
 
 [colors]
-background = rgba(3, 3, 3, 0.84)
+background = rgba(0, 0, 0, 1)
 foreground = white
 # colors from color0 to color254 can be set
 # black
