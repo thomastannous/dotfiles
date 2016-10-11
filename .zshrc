@@ -80,8 +80,7 @@ set -o vi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 cd /home/tannous
-alias swp2='mvn clean package -DskipTests=true embedded-glassfish:run'
-
+source ~/.aliases.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND="find -L"

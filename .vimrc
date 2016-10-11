@@ -92,8 +92,12 @@ let mapleader = ","
 let g:Tex_DefaultTargetFormat = 'pdf'
 let g:Tex_MultipleCompileFormats='pdf, aux'
 nmap <Leader>, :call SaveAndCompile()<CR>
+
 nmap <Leader>/ :Ack! 
 nmap <C-t> :FZF<CR>
+
+" for vim-table-mode compatible with markdown 
+let g:table_mode_corner="|"
 
 "for fzf.vim plugin
 set rtp+=~/.fzf
