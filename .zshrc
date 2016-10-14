@@ -82,6 +82,8 @@ set -o vi
 cd /home/tannous
 source ~/.aliases.sh
 
+export KEYTIMEOUT=1
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export FZF_DEFAULT_COMMAND="find -L"
 export FZF_CTRL_T_COMMAND="find -L"

@@ -8,7 +8,8 @@
 
 dir=~/dotfiles                    # dotfiles directory
 olddir=~/dotfiles_old             # old dotfiles backup directory
-files=".i3blocks.conf .vimrc .Xmodmap .zshrc .xbindkeysrc .Xresources .xinitrc .xserverrc"    # list of files/folders to symlink in homedir
+# list of files/folders to symlink in homedir
+files=".aliases.sh .i3blocks.conf .vimrc .Xmodmap .zshrc .xbindkeysrc .Xresources .xinitrc .xserverrc"    
 
 ##########
 

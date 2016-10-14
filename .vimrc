@@ -94,7 +94,7 @@ let g:Tex_MultipleCompileFormats='pdf, aux'
 nmap <Leader>, :call SaveAndCompile()<CR>
 
 nmap <Leader>/ :Ack! 
-nmap <C-t> :FZF<CR>
+nmap <Leader>t :FZF<CR>
 
 " for vim-table-mode compatible with markdown 
 let g:table_mode_corner="|"
