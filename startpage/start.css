@@ -1,0 +1,52 @@
+html {
+    background-color:#2b8aff;
+}
+header {
+    width:800px;
+    height:200px;
+    text-align:center;
+    margin: auto;
+    color:#001333;
+    margin-top: 100px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    font: 400 50px/1.1 'Rancho', Georgia, serif;
+}
+
+div {
+    margin:auto;
+    background-color:#0657d8;
+    width:400px;
+    color:#001333;
+    height: 500px;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+    font: 400 60px/1.6 'Pacifico', Georgia, serif;
+    padding-left: 40px;
+}
+
+a:link    {color:#001333;background-color:transparent; text-decoration:none}
+a:visited {color:#001333;background-color:transparent; text-decoration:none}
+a:active  {color:#001333;background-color:transparent; text-decoration:none}
+
+#youtube:hover {
+    color:red;
+    text-decoration:none;
+}
+
+#whatsapp:hover {
+    color:#39c124;
+    text-decoration:none;
+}
+
+#github:hover {
+    color:white;
+    text-decoration:none;
+}
+#gmail:hover {
+    color:red;
+    text-decoration:none;
+}
+#elearning:hover {
+    color:darkblue;
+    text-decoration:none;
+}
