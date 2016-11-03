@@ -1,8 +1,8 @@
 [options]
-font = Roboto Mono Medium for Powerline Medium 12
-font = Liberation Mono for Powerline Regular 12
-font = Ubuntu Mono derivative Powerline Regular 12
-font = Source Code Pro for Powerline Medium 12 
+font = Roboto Mono Medium for Powerline Medium 11
+font = Liberation Mono for Powerline Regular 11
+font = Ubuntu Mono derivative Powerline Regular 11
+font = Source Code Pro for Powerline Medium 11
 
 [colors]
 background = rgba(0, 0, 0, 1)

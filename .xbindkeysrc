@@ -4,9 +4,9 @@
 	XF86AudioRaiseVolume
 "amixer set Master toggle"
 	XF86AudioMute	
-"firefox gmail.com"
+"chromium gmail.com"
         Alt + g
-"firefox https://www.youtube.com/feed/subscriptions" 
+"chromium https://www.youtube.com/feed/subscriptions" 
         Alt + y
 "clementine"
         Alt + m
