@@ -5,6 +5,15 @@ alias pac="sudo pacman -S"
 alias gitls="git log --pretty=format:'%C(yellow)%h%Cred%d\ %Creset%s%Cblue\ [%cn]' --decorate"
 alias gittree="git log --graph --oneline --decorate --all"
 alias todo="vim ~/Dropbox/todo"
+
+evi() {
+    if [ ! -n "$1" ]; then 
+        echo "USAGE: evi <filename>";
+    else
+        ( evince "$@" & );
+    fi
+}
+
 #git aliases
 alias gs="git status"
 alias gd="git diff"
@@ -13,3 +22,4 @@ alias gc="git clone $1 $2"
 alias gcm="git commit -m "$1""
 alias gaa="git add -A ."
 alias gpo="git push origin $1"
+alias gpu="git pull origin "$1""
