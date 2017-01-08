@@ -4,7 +4,7 @@ alias vi="vim"
 alias pac="sudo pacman -S"
 alias gitls="git log --pretty=format:'%C(yellow)%h%Cred%d\ %Creset%s%Cblue\ [%cn]' --decorate"
 alias gittree="git log --graph --oneline --decorate --all"
-
+alias todo="vim ~/Dropbox/todo"
 #git aliases
 alias gs="git status"
 alias gd="git diff"

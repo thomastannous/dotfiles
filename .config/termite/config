@@ -5,16 +5,18 @@ font = Ubuntu Mono derivative Powerline Regular 11
 font = Source Code Pro for Powerline Medium 11
 
 [colors]
-background = rgba(0, 0, 0, 1)
-foreground = white
-# colors from color0 to color254 can be set
+# special
+foreground      = #dddddd
+foreground_bold = #dddddd
+background      = #121212
+ 
 # black
 color0  = #000000
 color8  = #343434
 
 # red
-color1  = #e92f2f
-color9  = #e92f2f
+color1  = #f10c0c
+color9  = #f10c0c
 
 # green
 color2  = #0ed839
@@ -39,4 +41,3 @@ color14 = #23edda
 # white
 color7  = #ababab
 color15 = #f9f9f9
-

@@ -203,7 +203,7 @@ set $basebb #595959
 #    }
 #}
 
-exec /home/tannous/.config/lemonbuddy/launch.sh
+exec /home/tannous/.config/polybar/launch.sh
 
 #keyboard bindings for US Layout with Umlaute
 #exec setxkbmap -layout us
@@ -214,7 +214,11 @@ exec /home/tannous/.config/lemonbuddy/launch.sh
 #exec xmodmap -e 'keysym u = u U udiaeresis Udiaeresis'
 #exec xmodmap -e 'keysym s = s S ssharp'
 
-exec_always feh --bg-scale /home/tannous/pictures/colorfulgradient.jpg
+#exec_always feh --bg-scale /home/tannous/pictures/colorfulgradient.jpg
+#exec_always feh --bg-scale /home/tannous/pictures/2011-simple-wallpapers-backgrounds.jpg
+#exec_always feh --bg-scale /home/tannous/pictures/Backgrounds-simple-wallpapers-HD.jpg
+#exec_always feh --bg-scale /home/tannous/pictures/minimalist_metal_wallpaper_by_malkowitch-d5k14s4.jpg
+exec_always feh --bg-scale /home/tannous/pictures/artsfon.com-42985.jpg
 
 exec --no-startup-id nm-applet
 for_window [class="^.*"] border pixel 2

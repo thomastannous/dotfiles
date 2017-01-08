@@ -55,7 +55,6 @@ filetype plugin on    " required
 " Put your non-Plugin stuff after this line
 syntax on
 set number
-set relativenumber
 set autoindent 
 set shiftwidth=4
 set softtabstop=4
@@ -72,6 +71,9 @@ nnoremap <space> :nohlsearch<CR>
 " this lets you move over these visual lines
 nnoremap j gj
 nnoremap k gk
+
+nnoremap <F7> :tabp<CR>
+nnoremap <F8> :tabn<CR>
 
 
 "for latex-suite fix grep
@@ -113,17 +115,17 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " Linux/MacOSX
 
 
 " tableModetoggle
-inoreabbrev <expr> <bar><bar>
-            \ s:isAtStartOfLine('\|\|') ?
-            \ '<c-o>:TableModeEnable<cr><bar><space><bar><left><left>' : '<bar><bar>'
-inoreabbrev <expr> __
-            \ s:isAtStartOfLine('__') ?
-            \ '<c-o>:silent! TableModeDisable<cr>' : '__'
-
-fun! s:isAtStartOfLine(mapping)
-    let text_before_cursor = getline('.')[0 : col('.')-1]
-    let mapping_pattern = '\V' . escape(a:mapping, '\')
-    let comment_pattern = '\V' . escape(substitute(&l:commentstring, '%s.*$', '', ''), '\')
-    return (text_before_cursor =~? '^' . ('\v(' . comment_pattern . '\v)?') . '\s*\v' . mapping_pattern . '\v$')
-endf
+" inoreabbrev <expr> <bar><bar>
+"            \ s:isAtStartOfLine('\|\|') ?
+"            \ '<c-o>:TableModeEnable<cr><bar><space><bar><left><left>' : '<bar><bar>'
+"inoreabbrev <expr> __
+"            \ s:isAtStartOfLine('__') ?
+"            \ '<c-o>:silent! TableModeDisable<cr>' : '__'
+"
+"fun! s:isAtStartOfLine(mapping)
+"    let text_before_cursor = getline('.')[0 : col('.')-1]
+"    let mapping_pattern = '\V' . escape(a:mapping, '\')
+"    let comment_pattern = '\V' . escape(substitute(&l:commentstring, '%s.*$', '', ''), '\')
+"    return (text_before_cursor =~? '^' . ('\v(' . comment_pattern . '\v)?') . '\s*\v' . mapping_pattern . '\v$')
+"endf
 
